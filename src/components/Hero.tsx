@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen flex items-center justify-center bg-gradient-to-b from-gray-100 to-purple-100">
+    <div className="relative h-screen flex items-center justify-center bg-gradient-to-b from-gray-100 via-purple-100 to-gray-50">
       {/* Profile Image */}
       <Image
         src="/haroon1.png"
