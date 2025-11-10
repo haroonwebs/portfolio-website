@@ -5,6 +5,8 @@ import { CiUser } from "react-icons/ci";
 import { GrServices } from "react-icons/gr";
 import { TfiGallery } from "react-icons/tfi";
 import { MdContactPhone } from "react-icons/md";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Sidebar() {
   const [active, setActive] = useState("hero");
@@ -34,46 +36,81 @@ export default function Sidebar() {
     <aside className="fixed left-[-35px] top-40 h-screen w-64 text-gray-800 flex flex-col items-center justify-between py-10">
       <div className="flex flex-col items-center">
         <nav className="flex flex-col space-y-10 text-lg">
-          <a
+          <Link
             href="#hero"
             className={`flex items-center gap-2  hover:text-purple-100 ${
               active === "hero" ? "text-purple-200 font-bold" : ""
             }`}
           >
-            <HiOutlineHomeModern /> <span>Home</span>
-          </a>
-          <a
+            <HiOutlineHomeModern />{" "}
+            <motion.span
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              Home
+            </motion.span>
+          </Link>
+          <Link
             href="#about"
             className={`flex items-center gap-2  hover:text-purple-100 ${
               active === "about" ? "text-purple-200 font-bold" : ""
             }`}
           >
-            <CiUser /> <span>About</span>
-          </a>
-          <a
+            <CiUser />{" "}
+            <motion.span
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              About
+            </motion.span>
+          </Link>
+          <Link
             href="#skills"
             className={`flex items-center gap-2  hover:text-purple-100 ${
               active === "skills" ? "text-purple-200 font-bold" : ""
             }`}
           >
-            <GrServices /> <span>Skills</span>
-          </a>
-          <a
+            <GrServices />{" "}
+            <motion.span
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              Skills
+            </motion.span>
+          </Link>
+          <Link
             href="#projects"
             className={`flex items-center gap-2  hover:text-purple-100 ${
               active === "projects" ? "text-purple-200 font-bold" : ""
             }`}
           >
-            <TfiGallery /> <span>Projects</span>
-          </a>
-          <a
+            <TfiGallery />{" "}
+            <motion.span
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              Projects
+            </motion.span>
+          </Link>
+          <Link
             href="#contact"
             className={`flex items-center gap-2 hover:text-purple-100 ${
               active === "contact" ? "text-purple-200 font-bold" : ""
             }`}
           >
-            <MdContactPhone /> <span>Contact</span>
-          </a>
+            <MdContactPhone />{" "}
+            <motion.span
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              Contact
+            </motion.span>
+          </Link>
         </nav>
       </div>
     </aside>
