@@ -32,85 +32,38 @@ export default function Sidebar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const linkVariants = {
+    inactive: { opacity: 0.6, x: 0, scale: 1 },
+    active: { opacity: 1, x: 10, scale: 1.1 },
+  };
+
   return (
     <aside className="fixed left-[-35px] top-40 h-screen w-64 text-gray-800 flex flex-col items-center justify-between py-10">
       <div className="flex flex-col items-center">
         <nav className="flex flex-col space-y-10 text-lg">
-          <Link
-            href="#hero"
-            className={`flex items-center gap-2  hover:text-purple-100 ${
-              active === "hero" ? "text-purple-200 font-bold" : ""
-            }`}
-          >
-            <HiOutlineHomeModern />{" "}
-            <motion.span
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            >
-              Home
-            </motion.span>
-          </Link>
-          <Link
-            href="#about"
-            className={`flex items-center gap-2  hover:text-purple-100 ${
-              active === "about" ? "text-purple-200 font-bold" : ""
-            }`}
-          >
-            <CiUser />{" "}
-            <motion.span
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            >
-              About
-            </motion.span>
-          </Link>
-          <Link
-            href="#skills"
-            className={`flex items-center gap-2  hover:text-purple-100 ${
-              active === "skills" ? "text-purple-200 font-bold" : ""
-            }`}
-          >
-            <GrServices />{" "}
-            <motion.span
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            >
-              Skills
-            </motion.span>
-          </Link>
-          <Link
-            href="#projects"
-            className={`flex items-center gap-2  hover:text-purple-100 ${
-              active === "projects" ? "text-purple-200 font-bold" : ""
-            }`}
-          >
-            <TfiGallery />{" "}
-            <motion.span
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            >
-              Projects
-            </motion.span>
-          </Link>
-          <Link
-            href="#contact"
-            className={`flex items-center gap-2 hover:text-purple-100 ${
-              active === "contact" ? "text-purple-200 font-bold" : ""
-            }`}
-          >
-            <MdContactPhone />{" "}
-            <motion.span
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            >
-              Contact
-            </motion.span>
-          </Link>
+          {[
+            { id: "hero", label: "Home", icon: <HiOutlineHomeModern /> },
+            { id: "about", label: "About", icon: <CiUser /> },
+            { id: "skills", label: "Skills", icon: <GrServices /> },
+            { id: "projects", label: "Projects", icon: <TfiGallery /> },
+            { id: "contact", label: "Contact", icon: <MdContactPhone /> },
+          ].map((item) => (
+            <Link key={item.id} href={`#${item.id}`}>
+              <motion.div
+                variants={linkVariants}
+                animate={active === item.id ? "active" : "inactive"}
+                transition={{ type: "spring", stiffness: 120, damping: 12 }}
+                className={`flex items-center gap-2 cursor-pointer ${
+                  active === item.id
+                    ? "text-purple-600 font-bold"
+                    : "text-gray-700"
+                }`}
+              >
+                {item.icon}
+                <span>{item.label}</span>
+              </motion.div>
+            </Link>
+          ))}
         </nav>
       </div>
     </aside>

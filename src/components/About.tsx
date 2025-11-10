@@ -3,7 +3,7 @@ import { FaSchool, FaUserTie } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="h-screen flex flex-col items-start justify-start p-10  space-y-10 bg-gradient-to-b from-gray-100 to-purple-100 text-gray-800">
+    <div className="h-screen flex flex-col items-start justify-start p-10  space-y-10 bg-gradient-to-b from-gray-100 via-purple-100 to-gray-50 text-gray-800">
       <h1 className="text-4xl font-bold">About</h1>
       <p className="text-xl mb-6">
         Software Engineer with 1+ years of hands-on experience in full-stack web
