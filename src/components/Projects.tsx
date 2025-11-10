@@ -18,7 +18,7 @@ const Projects = () => {
         initial={{ opacity: 0, y: 80 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}} // animate only when visible
         transition={{ duration: 1, delay: 0.5 }}
-        className="grid grid-cols-3 justify-center items-center gap-10 mt-10"
+        className="grid grid-cols-3 justify-center items-center gap-6 mt-10"
       >
         <Project
           icon={
@@ -59,7 +59,7 @@ const Projects = () => {
 };
 
 const Project = ({ icon, name }: { icon: React.ReactNode; name: string }) => (
-  <div className="flex flex-col justify-center items-center hover:scale-130 transition-transform duration-300">
+  <div className="flex flex-col justify-center items-center hover:scale-120 transition-transform duration-300">
     {icon}
     <strong>{name}</strong>
   </div>
