@@ -1,5 +1,3 @@
-import React from "react";
-
 const About = () => {
   return (
     <div className="h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-100 to-purple-100 text-gray-800">
