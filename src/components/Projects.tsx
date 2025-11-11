@@ -12,15 +12,15 @@ const Projects = () => {
     <div
       id="projects"
       ref={ref}
-      className="h-screen flex flex-col p-10 bg-gradient-to-b from-gray-100 via-purple-100 to-gray-50 text-gray-800"
+      className="h-screen flex flex-col p-2 md:p-10 bg-gradient-to-b from-gray-100 via-purple-100 to-gray-50 text-gray-800"
     >
-      <h1 className="text-4xl font-bold mb-4">Projects</h1>
+      <h1 className="text-xl md:text-4xl font-bold mb-4">Projects</h1>
 
       <motion.div
         initial={{ opacity: 0, y: 80 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}} // animate only when visible
         transition={{ duration: 1, delay: 0.5 }}
-        className="grid grid-cols-3 justify-center items-center gap-6 mt-10"
+        className="grid grid-cols-2 md:grid-cols-3 justify-center items-center gap-6 mt-10"
       >
         <Project
           icon={

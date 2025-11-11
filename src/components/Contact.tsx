@@ -4,14 +4,14 @@ import { CiLocationOn, CiMail, CiPhone } from "react-icons/ci";
 
 const Contact = () => {
   return (
-    <div className="h-screen flex flex-col items-start justify-start p-10 bg-gradient-to-b from-gray-100 to-purple-100 text-gray-800">
-      <h1 className="text-4xl font-bold mb-4">Contact</h1>
-      <div className="flex flex-row h-screen w-full">
-        <div className="flex items-center justify-center w-[30%]">
-          <ul className="mt-4 text-xl space-y-6 list-none">
+    <div className="h-screen flex flex-col items-start justify-start p-2 md:p-10 bg-gradient-to-b from-gray-100 to-purple-100 text-gray-800">
+      <h1 className="text-xl md:text-4xl font-bold mb-4">Contact</h1>
+      <div className="flex flex-col md:flex-row h-screen w-full">
+        <div className="flex items-center justify-start ml-3 md:justify-center w-full md:w-[30%]">
+          <ul className="mt-4 text-md md:text-xl space-y-4 md:space-y-6 list-none">
             <li className="flex items-start gap-3">
               <CiLocationOn
-                className="text-3xl text-gray-600 mt-3 bg-amber-50 border border-gray-300 rounded 
+                className="text-2xl md:text-3xl text-gray-600 mt-3 bg-amber-50 border border-gray-300 rounded 
   hover:bg-amber-100 hover:scale-110 hover:rotate-6 
   transition-transform duration-300 ease-in-out p-1"
               />
@@ -24,7 +24,7 @@ const Contact = () => {
             <li className="flex items-start gap-3">
               <Link href="https://wa.me/923085171091" target="_blank">
                 <CiPhone
-                  className="text-3xl text-gray-600 mt-3 bg-amber-50 border border-gray-300 rounded 
+                  className="text-2xl md:text-3xl text-gray-600 mt-3 bg-amber-50 border border-gray-300 rounded 
   hover:bg-amber-100 hover:scale-110 hover:rotate-6 
   transition-transform duration-300 ease-in-out p-1"
                 />
@@ -38,7 +38,7 @@ const Contact = () => {
             <li className="flex items-start gap-3">
               <Link href="mailto:haroontalib8029@gmail.com">
                 <CiMail
-                  className="text-3xl text-gray-600 mt-3 bg-amber-50 border border-gray-300 rounded 
+                  className="text-2xl md:text-3xl text-gray-600 mt-3 bg-amber-50 border border-gray-300 rounded 
   hover:bg-amber-100 hover:scale-110 hover:rotate-6 
   transition-transform duration-300 ease-in-out p-1"
                 />
@@ -50,16 +50,16 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col items-center justify-center w-[70%]">
-          <form className="max-w-2xl mx-auto bg-transparent p-8 space-y-6">
+        <div className="flex flex-col items-center justify-center w-full md:w-[70%]">
+          <form className="w-full md:max-w-2xl mx-auto bg-transparent p-2 md:p-8 space-y-2 md:space-y-6">
             {/* Two inputs side by side */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6">
               <div>
                 <input
                   type="text"
                   id="firstName"
                   placeholder="Name"
-                  className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                  className="w-full border border-gray-300 rounded-md px-2 md:px-4 py-1 md:py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
                 />
               </div>
 
@@ -68,7 +68,7 @@ const Contact = () => {
                   type="email"
                   id="email"
                   placeholder="Email"
-                  className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                  className="w-full border border-gray-300 rounded-md px-2 md:px-4 py-1 md:py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
                 />
               </div>
             </div>
@@ -79,7 +79,7 @@ const Contact = () => {
                 type="text"
                 id="subject"
                 placeholder="Subject"
-                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                className="w-full border border-gray-300 rounded-md px-2 md:px-4 py-1 md:py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
               />
             </div>
 
@@ -87,7 +87,7 @@ const Contact = () => {
             <div>
               <textarea
                 id="message"
-                rows={5}
+                rows={3}
                 placeholder="Message..."
                 className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 resize-none"
               />
