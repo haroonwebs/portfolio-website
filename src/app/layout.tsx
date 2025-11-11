@@ -19,6 +19,9 @@ const caladea = Caladea({
 export const metadata: Metadata = {
   title: "Muhammad Haroon Talib",
   description: "Welcome to my world",
+  icons: {
+    icon: "/haroon1.png",
+  },
 };
 
 export default function RootLayout({
