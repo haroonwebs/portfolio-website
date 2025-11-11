@@ -7,9 +7,11 @@ import Sidebar from "@/components/SideBar";
 
 export default function Home() {
   return (
-    <main className="flex">
-      <Sidebar />
-      <div className="ml-64 w-full scroll-smooth">
+    <main className="flex flex-col md:flex-row">
+      <div className="hidden md:flex">
+        <Sidebar />
+      </div>
+      <div className="md:ml-64 w-full scroll-smooth">
         <section id="hero">
           <Hero />
         </section>

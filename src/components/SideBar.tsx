@@ -38,7 +38,7 @@ export default function Sidebar() {
   };
 
   return (
-    <aside className="fixed left-[-35px] top-40 h-screen w-64 text-gray-800 flex flex-col items-center justify-between py-10">
+    <aside className="fixed left-[-35px] top-40 h-screen w-64 text-gray-800 flex-col items-center justify-between py-10 md:flex">
       <div className="flex flex-col items-center">
         <nav className="flex flex-col space-y-10 text-lg">
           {[

@@ -24,7 +24,7 @@ const Hero = () => {
           alt="My Profile Picture"
           width={750}
           height={740}
-          className="ml-20 mb-20"
+          className="md:ml-20 mb-20"
         />
       </motion.div>
 
@@ -57,7 +57,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="flex space-x-6 text-3xl text-gray-700 ml-48 mt-4"
+          className="flex space-x-6 text-3xl text-gray-700 ml-20 md:ml-48 mt-4"
         >
           <Link
             href="https://www.linkedin.com/in/muhammad-haroon-talib-710300279/"
