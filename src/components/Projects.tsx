@@ -2,6 +2,8 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+
 const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-200px" });
@@ -23,13 +25,14 @@ const Projects = () => {
         <Project
           icon={
             <Image
-              src="/homeLoop.png"
+              src="/home.jpg"
               alt="Home Buyer Loop"
-              width={150}
-              height={150}
+              width={200}
+              height={200}
             />
           }
           name="Home Buyer Loop"
+          link="https://homebuyerloop.com"
         />
         <Project
           icon={
@@ -41,6 +44,7 @@ const Projects = () => {
             />
           }
           name="Tough Cookies"
+          link="https://toughcookies.com"
         />
         <Project
           icon={
@@ -52,17 +56,31 @@ const Projects = () => {
             />
           }
           name="Shipping Made Good"
+          link="https://shippingmadegood.com"
         />
       </motion.div>
     </div>
   );
 };
 
-const Project = ({ icon, name }: { icon: React.ReactNode; name: string }) => (
-  <div className="flex flex-col justify-center items-center hover:scale-120 transition-transform duration-300">
+const Project = ({
+  icon,
+  name,
+  link,
+}: {
+  icon: React.ReactNode;
+  name: string;
+  link: string;
+}) => (
+  <Link
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex flex-col justify-center items-center hover:scale-110 transition-transform duration-300 p-4 rounded-lg hover:bg-purple-50"
+  >
     {icon}
-    <strong>{name}</strong>
-  </div>
+    <strong className="mt-2">{name}</strong>
+  </Link>
 );
 
 export default Projects;
