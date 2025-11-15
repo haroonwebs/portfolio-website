@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto, Playball, Caladea } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -34,6 +35,21 @@ export default function RootLayout({
       <body
         className={` ${roboto.className} ${playball.className} ${caladea.className} antialiased`}
       >
+        {/* Google Analytics Script */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-BMY694J9YG"
+        />
+
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BMY694J9YG');
+          `}
+        </Script>
+
         {children}
       </body>
     </html>
