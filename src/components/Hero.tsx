@@ -1,4 +1,4 @@
-"use client"; // needed for Framer Motion in Next.js App Router
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";

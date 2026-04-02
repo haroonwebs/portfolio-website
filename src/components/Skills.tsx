@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaPython, FaReact, FaNodeJs } from "react-icons/fa";
 import { TiHtml5 } from "react-icons/ti";
-import { SiCss3, SiMui } from "react-icons/si";
+import { SiCss, SiMui } from "react-icons/si";
 import {
   TbBrandNextjs,
   TbBrandDjango,
@@ -41,7 +41,7 @@ const Skills = () => {
           icon={<TiHtml5 className="text-4xl md:text-9xl" />}
           name="HTML5"
         />
-        <Skill icon={<SiCss3 className="text-4xl md:text-9xl" />} name="CSS3" />
+        <Skill icon={<SiCss className="text-4xl md:text-9xl" />} name="CSS3" />
         <Skill
           icon={<FaReact className="text-4xl md:text-9xl" />}
           name="React"
