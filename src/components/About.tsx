@@ -21,7 +21,7 @@ const About = () => {
           alt="My Profile Picture"
           width={500}
           height={500}
-          className="hidden md:block rounded-lg border-r-2 border-solid border-gray-400 mr-6"
+          className="hidden md:block mr-6"
         />
         <div className="w-full">
           <h1 className="w-full text-md md:text-2xl font-bold bg-linear-to-r from-white via-gray-400 to-gray-800 bg-clip-text text-transparent">

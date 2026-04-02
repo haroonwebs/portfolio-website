@@ -20,7 +20,7 @@ const Hero = () => {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <Image
-          src="/haroon1.png"
+          src="/haroon2.png"
           alt="My Profile Picture"
           width={750}
           height={740}
