@@ -3,9 +3,9 @@ import { FaSchool, FaUserTie } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="h-screen flex flex-col items-start justify-start p-2 md:p-10 space-y-2 md:space-y-10 bg-gradient-to-b from-gray-100 via-purple-100 to-gray-50 text-gray-800">
-      <h1 className="text-xl md:text-4xl font-bold">About</h1>
-      <p className="text-md md:text-xl md:mb-6">
+    <div className="h-screen flex flex-col items-start justify-start p-2 md:p-10 space-y-2 md:space-y-10 bg-linear-to-b from-white via-purple-800 to-black text-white">
+      <h1 className="text-xl md:text-4xl font-bold text-black">About</h1>
+      <p className="text-md md:text-xl md:mb-6 text-black">
         Software Engineer with 1+ years of hands-on experience in full-stack web
         development using the MERN stack (MongoDB, Express.js, React.js,
         Node.js). I’m passionate about building responsive, scalable, and
@@ -21,10 +21,10 @@ const About = () => {
           alt="My Profile Picture"
           width={500}
           height={500}
-          className="hidden md:block rounded-lg border-r-2 border-solid border-gray-400 mr-6"
+          className="hidden md:block mr-6"
         />
         <div className="w-full">
-          <h1 className="w-full text-md md:text-2xl font-bold bg-gradient-to-r from-purple-800 via-black to-gray-800 bg-clip-text text-transparent">
+          <h1 className="w-full text-md md:text-2xl font-bold bg-linear-to-r from-white via-gray-400 to-gray-800 bg-clip-text text-transparent">
             Web Developer | Programmer
           </h1>
           <div className="flex mt-4 space-x-10 md:space-x-30 ">

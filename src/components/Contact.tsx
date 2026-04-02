@@ -4,8 +4,8 @@ import { CiLocationOn, CiMail, CiPhone } from "react-icons/ci";
 
 const Contact = () => {
   return (
-    <div className="h-screen flex flex-col items-start justify-start p-2 md:p-10 bg-gradient-to-b from-gray-100 to-purple-100 text-gray-800">
-      <h1 className="text-xl md:text-4xl font-bold mb-4">Contact</h1>
+    <div className="h-screen flex flex-col items-start justify-start p-2 md:p-10 bg-linear-to-b from-black to-purple-800 text-white">
+      <h1 className="text-xl md:text-4xl font-bold mb-4 text-black">Contact</h1>
       <div className="flex flex-col md:flex-row h-screen w-full">
         <div className="flex items-center justify-start ml-3 md:justify-center w-full md:w-[30%]">
           <ul className="mt-4 text-md md:text-xl space-y-4 md:space-y-6 list-none">
@@ -17,7 +17,7 @@ const Contact = () => {
               />
               <div>
                 <strong>Address</strong>
-                <p className="text-gray-700">Neshman Iqbal Phase 1, Lahore</p>
+                <p className="text-gray-500">Neshman Iqbal Phase 1, Lahore</p>
               </div>
             </li>
 
@@ -31,7 +31,7 @@ const Contact = () => {
               </Link>
               <div>
                 <strong>Call</strong>
-                <p className="text-gray-700">+92 308 5171091</p>
+                <p className="text-gray-500">+92 308 5171091</p>
               </div>
             </li>
 
@@ -45,7 +45,7 @@ const Contact = () => {
               </Link>
               <div>
                 <strong>Email</strong>
-                <p className="text-gray-700">haroontalib8029@gmail.com</p>
+                <p className="text-gray-500">haroontalib8029@gmail.com</p>
               </div>
             </li>
           </ul>

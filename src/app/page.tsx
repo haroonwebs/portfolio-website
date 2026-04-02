@@ -7,7 +7,7 @@ import Sidebar from "@/components/SideBar";
 
 export default function Home() {
   return (
-    <main className="flex flex-col md:flex-row">
+    <main className="flex flex-col md:flex-row bg-linear-to-b from-black to-purple-800">
       <div className="hidden md:flex">
         <Sidebar />
       </div>

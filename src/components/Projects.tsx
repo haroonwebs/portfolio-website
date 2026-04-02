@@ -12,7 +12,7 @@ const Projects = () => {
     <div
       id="projects"
       ref={ref}
-      className="h-screen flex flex-col p-2 md:p-10 bg-gradient-to-b from-gray-100 via-purple-100 to-gray-50 text-gray-800"
+      className="h-screen flex flex-col p-2 md:p-10 bg-linear-to-b from-white via-purple-800 to-black text-gray-800"
     >
       <h1 className="text-xl md:text-4xl font-bold mb-4">Projects</h1>
 
@@ -76,7 +76,7 @@ const Project = ({
     href={link}
     target="_blank"
     rel="noopener noreferrer"
-    className="flex flex-col justify-center items-center hover:scale-110 transition-transform duration-300 p-4 rounded-lg hover:bg-purple-50"
+    className="flex flex-col justify-center items-center hover:scale-110 transition-transform duration-300 p-4 rounded-lg text-white hover:bg-purple-50"
   >
     {icon}
     <strong className="mt-2">{name}</strong>

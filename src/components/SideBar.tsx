@@ -54,9 +54,7 @@ export default function Sidebar() {
                 animate={active === item.id ? "active" : "inactive"}
                 transition={{ type: "spring", stiffness: 120, damping: 12 }}
                 className={`flex items-center gap-2 cursor-pointer ${
-                  active === item.id
-                    ? "text-purple-600 font-bold"
-                    : "text-gray-700"
+                  active === item.id ? "text-white" : "text-gray-200"
                 }`}
               >
                 {item.icon}

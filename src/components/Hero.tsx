@@ -12,7 +12,7 @@ import {
 
 const Hero = () => {
   return (
-    <div className="relative h-screen flex items-center justify-center bg-gradient-to-b from-gray-100 via-purple-100 to-gray-50 overflow-hidden">
+    <div className="relative h-screen flex items-center justify-center bg-linear-to-b from-black via-purple-800 to-gray-50 overflow-hidden">
       {/* Profile Image with fade-in effect */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
@@ -20,7 +20,7 @@ const Hero = () => {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <Image
-          src="/haroon1.png"
+          src="/haroon2.png"
           alt="My Profile Picture"
           width={750}
           height={740}
@@ -39,7 +39,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-5xl font-bold bg-gradient-to-r from-purple-800 via-black to-gray-800 bg-clip-text text-transparent mb-1 mt-4 pl-10"
+          className="text-5xl font-bold bg-linear-to-r from-white via-gray-300 to-white bg-clip-text text-transparent mb-1 mt-4 pl-10"
         >
           Muhammad Haroon Talib
         </motion.h1>
@@ -48,7 +48,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="text-xl pl-10 text-gray-800"
+          className="text-xl pl-10 text-gray-200"
         >
           Software Engineer
         </motion.p>
@@ -57,7 +57,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="flex space-x-6 text-3xl text-gray-700 ml-20 md:ml-48 mt-4"
+          className="flex space-x-6 text-3xl text-white ml-20 md:ml-48 mt-4"
         >
           <Link
             href="https://www.linkedin.com/in/muhammad-haroon-talib-710300279/"
