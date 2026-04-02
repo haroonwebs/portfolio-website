@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="h-screen flex flex-col items-start justify-start p-2 md:p-10 space-y-2 md:space-y-10 bg-linear-to-b from-white via-purple-800 to-black text-white">
       <h1 className="text-xl md:text-4xl font-bold text-black">About</h1>
-      <p className="text-md md:text-xl md:mb-6">
+      <p className="text-md md:text-xl md:mb-6 text-black">
         Software Engineer with 1+ years of hands-on experience in full-stack web
         development using the MERN stack (MongoDB, Express.js, React.js,
         Node.js). I’m passionate about building responsive, scalable, and
