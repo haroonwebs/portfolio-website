@@ -19,7 +19,7 @@ const Skills = () => {
     <div
       id="skills"
       ref={ref}
-      className="h-screen flex flex-col p-2 md:p-10 bg-gradient-to-b from-gray-100 to-purple-100 text-gray-800"
+      className="h-screen flex flex-col p-2 md:p-10 bg-linear-to-b from-black via-purple-800 to-white text-white"
     >
       <h1 className="text-xl md:text-4xl font-bold mb-4">Skills</h1>
 
