@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Muhammad Haroon Talib",
   description: "Welcome to my world",
   icons: {
-    icon: "/haroon1.png",
+    icon: "/haroon2.png",
   },
 };
 
