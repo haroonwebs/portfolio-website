@@ -5,7 +5,7 @@ import { CiLocationOn, CiMail, CiPhone } from "react-icons/ci";
 const Contact = () => {
   return (
     <div className="h-screen flex flex-col items-start justify-start p-2 md:p-10 bg-linear-to-b from-black to-purple-800 text-white">
-      <h1 className="text-xl md:text-4xl font-bold mb-4 text-black">Contact</h1>
+      <h1 className="text-xl md:text-4xl font-bold mb-4 text-white">Contact</h1>
       <div className="flex flex-col md:flex-row h-screen w-full">
         <div className="flex items-center justify-start ml-3 md:justify-center w-full md:w-[30%]">
           <ul className="mt-4 text-md md:text-xl space-y-4 md:space-y-6 list-none">
