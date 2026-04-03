@@ -24,7 +24,7 @@ const Hero = () => {
           alt="My Profile Picture"
           width={750}
           height={740}
-          className="md:ml-20 mb-20"
+          className="md:ml-20 -mb-20 mb:ml-0 ml-5"
         />
       </motion.div>
 
@@ -33,7 +33,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 100 }} // start below
         animate={{ opacity: 1, y: 0 }} // move up smoothly
         transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-        className="absolute h-screen flex flex-col items-start justify-center z-20"
+        className="absolute h-screen flex flex-col items-start md:justify-center justify-start z-20"
       >
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
