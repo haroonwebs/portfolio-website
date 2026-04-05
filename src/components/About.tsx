@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { FaSchool, FaUserTie } from "react-icons/fa";
+import { LuUniversity } from "react-icons/lu";
+import { FaUserTie, FaUserGraduate, FaGraduationCap } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -15,48 +15,22 @@ const About = () => {
         collaborating in dynamic environments, learning new technologies, and
         turning ideas into reliable, high-quality software solutions.
       </p>
-      <div className="flex items-start mt-2 md:mt-6 space-y-6">
-        <Image
-          src="/haroon1.png"
-          alt="My Profile Picture"
-          width={500}
-          height={500}
-          className="hidden md:block mr-6"
-        />
-        <div className="w-full">
-          <h1 className="w-full text-md md:text-2xl font-bold bg-linear-to-r from-white via-gray-400 to-gray-800 bg-clip-text text-transparent">
-            Web Developer | Programmer
-          </h1>
-          <div className="flex mt-4 space-x-10 md:space-x-30 ">
-            <ul className="mt-4 text-md md:text-xl space-y-4  md:space-y-6 list-inside">
-              <li>
-                <strong>Education:</strong> BSCS - Computer Science
-              </li>
-              <li>
-                <strong>University:</strong> Islamia University of Bahawalpur
-              </li>
-              <li>
-                <strong>Date of Birth:</strong> 13/07/1999
-              </li>
-              <li>
-                <strong>Professional Exp :</strong> 1+ years
-              </li>
-            </ul>
-            <ul className="mt-4 text-md md:text-xl space-y-4 md:space-y-6 list-inside">
-              <li className="text-md md:text-xl tracking-tighter">
-                <strong>CGP :</strong> 3.47
-              </li>
-              <li>
-                <FaSchool />
-              </li>
-              <li>
-                <strong>Age :</strong> 26
-              </li>
-              <li>
-                <FaUserTie className="text-md text-3xl" />
-              </li>
-            </ul>
-          </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-6 md:gap-10 md:mt-10">
+        <div className="flex flex-col items-center mt-4 space-y-4 md:space-y-6">
+          <FaUserGraduate className="text-4xl md:text-9xl" />
+          BSCS-Computer Science
+        </div>
+        <div className="flex flex-col items-center mt-4 space-y-4 md:space-y-6 ">
+          <LuUniversity className="text-4xl md:text-9xl" />
+          Islamia University of Bahawalpur
+        </div>
+        <div className="flex flex-col items-center mt-4  space-y-4 md:space-y-6">
+          <FaGraduationCap className="text-4xl md:text-9xl" />
+          CGP: 3.47
+        </div>
+        <div className="flex flex-col items-center mt-4 text-md md:text-xl space-y-4 md:space-y-6 ">
+          <FaUserTie className="text-4xl md:text-9xl" />
+          Exp: 1+ years
         </div>
       </div>
     </div>
