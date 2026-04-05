@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/haroon2.png",
   },
+  themeColor: "#38bdf8",
 };
 
 export default function RootLayout({
