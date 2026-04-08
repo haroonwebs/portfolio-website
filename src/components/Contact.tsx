@@ -41,13 +41,13 @@ const Contact = () => {
             </li>
 
             <li className="flex items-start gap-3">
-              <a href="mailto:haroontalib8029@gmail.com">
+              <Link href="mailto:haroontalib8029@gmail.com">
                 <CiMail
                   className="text-2xl md:text-3xl text-gray-600 mt-3 bg-amber-50 border border-gray-300 rounded 
   hover:bg-amber-100 hover:scale-110 hover:rotate-6 
   transition-transform duration-300 ease-in-out p-1"
                 />
-              </a>
+              </Link>
               <div>
                 <strong>Email</strong>
                 <p className="text-gray-500">haroontalib8029@gmail.com</p>
