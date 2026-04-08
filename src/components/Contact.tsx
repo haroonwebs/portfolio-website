@@ -10,11 +10,16 @@ const Contact = () => {
         <div className="flex items-center justify-start ml-3 md:justify-center w-full md:w-[30%]">
           <ul className="mt-4 text-md md:text-xl space-y-4 md:space-y-6 list-none">
             <li className="flex items-start gap-3">
-              <CiLocationOn
-                className="text-2xl md:text-3xl text-gray-600 mt-3 bg-amber-50 border border-gray-300 rounded 
+              <Link
+                href="https://maps.app.goo.gl/ttox5GhkzEj4FWSS6"
+                target="blank"
+              >
+                <CiLocationOn
+                  className="text-2xl md:text-3xl text-gray-600 mt-3 bg-amber-50 border border-gray-300 rounded 
   hover:bg-amber-100 hover:scale-110 hover:rotate-6 
   transition-transform duration-300 ease-in-out p-1"
-              />
+                />
+              </Link>
               <div>
                 <strong>Address</strong>
                 <p className="text-gray-500">Neshman Iqbal Phase 1, Lahore</p>
